@@ -16,4 +16,4 @@ import {TaskListComponent} from './task-list.component';
     TaskListComponent
   ]
 })
-export class TaskListModule { }
+export class TasksModule { }
