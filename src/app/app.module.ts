@@ -6,10 +6,12 @@ import { AppComponent } from './app.component';
 import { TasksModule } from './tasks/tasks.module';
 import { CalenderModule } from './calender/calender.module';
 import { GlobalErrorHandler } from './GlobalErrorHandler';
+import { TaskTableComponent } from './task-table/task-table.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TaskTableComponent
   ],
   imports: [
     BrowserModule,
