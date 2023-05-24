@@ -1,7 +1,7 @@
 {
   "uuid": "d5fb5d6e-85da-4c2b-9bd2-15a070011ecb",
   "lastMigration": 27,
-  "name": "Tasj api mocks",
+  "name": "task api mocks",
   "endpointPrefix": "",
   "latency": 0,
   "port": 3001,
@@ -35,12 +35,76 @@
       ],
       "enabled": true,
       "responseMode": null
+    },
+    {
+      "uuid": "93c6b477-55f5-421b-b5a8-dbe21a2c8af5",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "tasks",
+      "responses": [
+        {
+          "uuid": "b6450431-ead4-4f08-ad1c-47ce39218541",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "45b087fa-be38-4aa7-95b4-74e23cf7bc7d",
+      "type": "http",
+      "documentation": "",
+      "method": "delete",
+      "endpoint": "tasks/title",
+      "responses": [
+        {
+          "uuid": "b8e6e67e-9919-4ec5-9493-12eb08240ccc",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
     }
   ],
   "rootChildren": [
     {
       "type": "route",
       "uuid": "7ea0af17-38fc-46a9-b4d3-54a7b70be5ed"
+    },
+    {
+      "type": "route",
+      "uuid": "93c6b477-55f5-421b-b5a8-dbe21a2c8af5"
+    },
+    {
+      "type": "route",
+      "uuid": "45b087fa-be38-4aa7-95b4-74e23cf7bc7d"
     }
   ],
   "proxyMode": false,
@@ -60,6 +124,18 @@
     {
       "key": "Content-Type",
       "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
     }
   ],
   "proxyReqHeaders": [

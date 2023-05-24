@@ -1,28 +1,21 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CalendarComponent } from './calendar.component';
-import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { MatDatepickerModule } from '@angular/material/datepicker';
+import { NgModule } from '@angular/core';
 import { MatNativeDateModule } from '@angular/material/core';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterModule } from '@angular/router';
+import { CalendarComponent } from './calendar.component';
 import { PaintDirective } from './paint.directive';
-import { AppRoutingModule } from '../app-routing.module'
-
-
 
 @NgModule({
-  declarations: [
-    CalendarComponent,
-    PaintDirective
-  ],
+  declarations: [CalendarComponent, PaintDirective],
   imports: [
     CommonModule,
     BrowserAnimationsModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    AppRoutingModule,
+    RouterModule,
   ],
-  exports: [
-    CalendarComponent
-  ]
+  exports: [CalendarComponent],
 })
-export class CalendarModule { }
+export class CalendarModule {}
