@@ -4,9 +4,6 @@ import { ActivatedRoute } from '@angular/router';
 import { NewTask } from './new-task.dto';
 import { TaskItem } from './task-item.dto';
 import { TaskService } from './task.service';
-
-
-
 @Component({
   selector: 'task-list',
   templateUrl: './task-list.component.html',
