@@ -1,16 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CalenderComponent } from './calender.component';
+import { CalendarComponent } from './calendar.component';
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { PaintDirective } from './paint.directive';
+import { AppRoutingModule } from '../app-routing.module'
 
 
 
 @NgModule({
   declarations: [
-    CalenderComponent,
+    CalendarComponent,
     PaintDirective
   ],
   imports: [
@@ -18,9 +19,10 @@ import { PaintDirective } from './paint.directive';
     BrowserAnimationsModule,
     MatDatepickerModule,
     MatNativeDateModule,
+    AppRoutingModule,
   ],
   exports: [
-    CalenderComponent
+    CalendarComponent
   ]
 })
-export class CalenderModule { }
+export class CalendarModule { }

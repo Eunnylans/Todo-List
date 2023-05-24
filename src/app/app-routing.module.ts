@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CalenderComponent } from './calender/calender.component';
+import { CalendarComponent } from './calendar/calendar.component';
 import { TaskListComponent } from './tasks/task-list.component';
 
 const routes: Routes = [
-  { component: CalenderComponent, path: '' },
+  { component: CalendarComponent, path: '' },
   { component: TaskListComponent, path: 'tasks' },
 ];
 
